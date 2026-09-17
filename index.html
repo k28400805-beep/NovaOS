@@ -1,33 +1,15 @@
 <!doctype html>
 <html lang="tr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="theme-color" content="#111827">
-  <title>NOVA OS — Web Operating System</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#7c5cff"><title>NOVA OS — Web Operating System</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <main id="desktop" tabindex="0">
-    <div class="ambient"></div>
-    <div class="desktop-header"><div class="brand"><span>✦</span><strong>NOVA OS</strong></div><div id="desktop-hint">Çalışma alanınız</div></div>
-    <div id="desktop-icons" aria-label="Masaüstü uygulamaları"></div>
-    <section id="windows" aria-live="polite"></section>
-    <div id="start-menu" class="glass hidden">
-      <div class="start-top"><div class="brand-mark">✦</div><div><b>NOVA OS</b><small>Uygulama merkezi</small></div></div>
-      <input id="app-search" type="search" placeholder="Uygulama ara…" aria-label="Uygulama ara">
-      <div id="app-list" class="app-list"></div>
-    </div>
+  <main id="desktop"><div class="ambient"></div><div id="desktop-icons"></div><section id="windows"></section>
+    <div id="start-menu" class="glass hidden"><div class="start-top"><div class="brand-mark">✦</div><div><b>NOVA OS</b><small>Çalışma alanınız</small></div></div><input id="app-search" placeholder="Uygulama ara…" aria-label="Uygulama ara"><div id="app-list"></div></div>
   </main>
-  <footer id="taskbar" class="glass">
-    <button id="start-button" class="start-button" aria-expanded="false"><span>✦</span><b>Başlat</b></button>
-    <div id="task-items"></div>
-    <div class="tray"><button id="mute" title="Ses">🔊</button><button id="theme-toggle" title="Tema">☾</button><time id="clock"></time></div>
-  </footer>
-  <div id="toasts"></div>
-  <script src="script.js"></script>
-</body>
-</html>
+  <footer id="taskbar" class="glass"><button id="start-button" class="start-button"><span>✦</span><b>Başlat</b></button><div id="task-items"></div><div class="tray"><button id="mute" title="Ses">🔊</button><button id="theme-toggle" title="Tema">☾</button><time id="clock"></time></div></footer>
+  <div id="toasts"></div><script src="script.js"></script><script src="enhancements.js"></script>
+</body></html>
